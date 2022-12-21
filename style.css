@@ -1,0 +1,145 @@
+body {
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+:root{
+    --deft:100px;
+}
+.wrapper{
+    margin-top: 50px;
+    perspective:1000px;
+}
+.title{
+color: #fff;
+font-family: cursive;
+text-align: center;
+margin-top: 50px;
+}
+.content{
+ color: rgb(202, 201, 201);
+ font-family: cursive;
+ text-align: center;
+ font-weight: lighter;   
+ margin-top: 30px;
+ transition: opacity 2s 2s;
+}
+#cube-box{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    transform-style:preserve-3d;
+}
+
+#cube-box img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+
+#cube-box img:nth-child(1){
+transform: rotateY(0deg) translateZ(var(--deft));
+}
+
+#cube-box img:nth-child(2){
+transform: rotateY(90deg) translateZ(var(--deft));
+}
+
+#cube-box img:nth-child(3){
+transform: rotateY(180deg) translateZ(var(--deft));
+}
+
+#cube-box img:nth-child(4){
+transform: rotateY(-90deg) translateZ(var(--deft));
+}
+
+#cube-box img:nth-child(5){
+transform: rotateX(90deg) translateZ(var(--deft));
+}
+
+#cube-box img:nth-child(6){
+transform: rotateX(-90deg) translateZ(var(--deft));
+}
+
+#cube-box{
+animation: loops 10s linear infinite;
+animation-delay: 3s;
+}
+.changeX1{
+transform: rotateX(0deg);
+transition: transform 2s 2s;
+}
+.changeX2{
+transform: rotateX(90deg);
+transition: transform 2s 2s;
+}
+.changeX3{
+transform: rotateX(180deg);
+transition: transform 2s 2s;
+}
+.changeX4{
+transform: rotateX(270deg);
+transition: transform 2s 2s;
+}
+.changeX5{
+transform: rotateX(360deg);
+transition: transform 2s 2s;
+}
+
+.changeY1{
+transform: rotateY(0deg);
+transition: transform 2s 2s;
+}
+.changeY2{
+transform: rotateY(90deg);
+transition: transform 2s 2s;
+}
+.changeY3{
+transform: rotateY(180deg);
+transition: transform 2s 2s;
+}
+.changeY4{
+transform: rotateY(270deg);
+transition: transform 2s 2s;
+}
+.changeY5{
+transform: rotateY(360deg);
+transition: transform 2s 2s;
+}
+
+.flex{
+display: flex;
+flex-direction: column;
+align-items: space-evenly;
+justify-content: center;
+gap: 10px;
+}
+.controllers{
+background: transparent;
+text-align: center;
+
+}
+.btn{
+margin-top: 30px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+.btn button{
+padding: 20px;
+background: #0c1324;
+color: rgb(255, 255, 255);
+border-radius: 50px;
+border: 0;
+cursor: pointer;
+}
+.btn button:hover{
+background: #36466e;
+}
+
