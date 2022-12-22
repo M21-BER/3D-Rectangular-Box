@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>3D-Cube-Controllers</title>
-</head>
-<body>
-  <h1 class="title">Navigate Both in X & Y direction/በX እና Y አቅጣጫ ያስሱ</h1>
-  <div class="flex">
-    <div class="wrapper">
-        <div id="cube-box">
-            <img src="images/img-1.jpg">
-            <img src="images/img-2.jpg">
-            <img src="images/img-3.jpg">
-            <img src="images/img-4.jpg">
-            <img src="images/img-5.png">
-            <img src="images/img-6.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cool animated 3D cube</title>
+  </head>
+  <body>
+    <div class="flex">
+      <h1 class="title">
+        Cool Animated <span class="three-dim-text">3D</span> Cube
+      </h1>
+      <div class="cube-wrapper">
+        <div id="cube" class="">
+          <img src="images/img-1.jpg" alt="face1" />
+          <img src="images/img-2.jpg" alt="face2" />
+          <img src="images/img-3.jpg" alt="face3" />
+          <img src="images/img-4.jpg" alt="face4" />
+          <img src="images/img-5.png" alt="face5" />
+          <img src="images/img-6.jpg" alt="face6" />
         </div>
         <p class="content">This is about</p>
+      </div>
+      <div class="btns">
+        <button class="click">face 1</button>
+        <button class="click">face 2</button>
+        <button class="click">face 3</button>
+        <button class="click">face 4</button>
+        <button class="click">face 5</button>
+        <button class="click">face 6</button>
+      </div>
+
+      <p class="copy">
+        Copyright &copy; <span class="year"></span> codespice, All rights
+        reserved
+      </p>
     </div>
-    <div class="controllers">
-      <div class="btn">
-        <button class="clickX">X Face 1</button>
-        <button class="clickX">X Face 2</button>
-        <button class="clickX">X Face 3</button>
-        <button class="clickX">X Face 4</button>
-        <button class="clickX">X Back to Face 1</button>
-       </div>
-       <div class="btn">
-        <button class="clickY">Y Face 1</button>
-        <button class="clickY">Y Face 2</button>
-        <button class="clickY">Y Face 3</button>
-        <button class="clickY">Y Face 4</button>
-        <button class="clickY">Y Back to Face 1</button>
-       </div>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
